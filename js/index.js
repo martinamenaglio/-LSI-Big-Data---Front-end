@@ -55,7 +55,7 @@ addEventListener(
 				 *	El primero de ellos tiene la clase remover y sera utilizado para remover la fila
 				 *	El segundo de ellos tiene la clase editar y sera utilizado para editar la fila
 				 */
-				td.innerHTML = "<button class='btn btn-default btn-primary remover'><i class='fa fa-trash' aria-hidden='true'></i></button><button class='btn btn-default btn-primary editar'><i class='fa fa-pencil' aria-hidden='true'></i></button>";
+				td.innerHTML = "<button class='btn btn-default btn-primary boton-accion remover'><i class='fa fa-trash' aria-hidden='true'></i></button><button class='btn btn-default btn-primary boton-accion editar'><i class='fa fa-pencil' aria-hidden='true'></i></button>";
 
 				//	Inserto la celda dentro de la fila
 				tr.appendChild(td);
@@ -85,7 +85,7 @@ addEventListener(
 						}
 
 						//	Hago visible el boton modificar quitandole la clase hidden 
-						document.querySelector('button.modificar').setAttribute('class','modificar');
+						document.querySelector('button.modificar').setAttribute('class','btn btn-default btn-primary modificar');
 
 						//	Oculto el boton crear agregando la clase hidden
 						document.querySelector('button.crear').setAttribute('class','hidden crear');
@@ -139,7 +139,7 @@ addEventListener(
 				document.querySelector('button.modificar').setAttribute('class','hidden modificar');
 
 				//	Hago visible el boton crear quitandole la clase hidden 
-				document.querySelector('button.crear').setAttribute('class','crear');
+				document.querySelector('button.crear').setAttribute('class','btn btn-default btn-primary crear');
 
 				//	Le vacio el atributo investigacion al boton modificar 
 				document.querySelector('button.modificar').setAttribute('investigacion','')
